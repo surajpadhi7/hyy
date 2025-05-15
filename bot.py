@@ -2,7 +2,9 @@ import asyncio
 import random
 import json
 from telethon import TelegramClient, events, functions, types
-from openai import OpenAI
+import openai
+openai.api_key = config['OPENAI_API_KEY']
+
 
 # --- Load from config.json ---
 try:
@@ -18,7 +20,6 @@ admin_id = config['ADMIN_ID']
 GROUP_ID = config['GROUP_ID']
 
 # Initialize OpenAI client
-openai = OpenAI(api_key=config['OPENAI_API_KEY'])
 
 session_name = "userbot"
 client = TelegramClient(session_name, api_id, api_hash)
