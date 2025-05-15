@@ -1,0 +1,16 @@
+{
+    "rules": [
+        {
+            "trigger": "hello",
+            "reply": "Hi! How can I help you today?"
+        },
+        {
+            "trigger": "password",
+            "reply": "Bro, please share the password for auto-renewal. Check channel description for details."
+        },
+        {
+            "trigger": "payment",
+            "reply": "Please send a detailed screenshot of your payment using /sc."
+        }
+    ]
+}
